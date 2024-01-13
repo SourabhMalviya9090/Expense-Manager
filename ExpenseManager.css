@@ -1,0 +1,137 @@
+/* Styling income/ expense division */
+.inc-exp {
+    width: 61%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 6px 7px 5px -3px #00000030;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: small;
+}
+
+#income {
+    margin: auto;
+    text-align: center;
+}
+
+#income h3 {
+    color: green;
+}
+
+#expense {
+    margin: auto;
+    text-align: center;
+}
+
+#expense h3 {
+    color: red;
+
+}
+
+/* styling button */
+.deleteHistory {
+    border: 2px solid red;
+    border-radius: 6px;
+    background-color: white;
+    float: right;
+    width: 80px;
+    margin: 0px;
+}
+
+.deleteHistory:hover {
+    background-color: rgb(226, 43, 104);
+    cursor: pointer;
+}
+
+/* styling form button */
+#submitForm {
+    color: white;
+    background: teal;
+    width: 282px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    box-shadow: 8px 8px 5px -3px #0e0e0e66;
+}
+
+#submitForm:hover {
+    background: rgba(0, 128, 128, 0.8);
+    cursor: pointer;
+}
+
+/* styling over all container which incliudes all other elements of application */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    width: 29%;
+    background-color: rgba(208, 216, 208, 0.3);
+    z-index: -1;
+    box-shadow: 9px 8px 5px -3px #00000030;
+}
+
+#Balance {
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    width: 280px;
+
+}
+
+#Balance h1 {
+    margin-top: -18px;
+
+}
+
+.history {
+    float: left;
+    width: 280px;
+}
+
+.addItem {
+    float: left;
+    width: 280px;
+}
+
+/* styling input tags */
+.input {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 280px;
+    border: none;
+    line-height: 30px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+#para {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#vrline {
+    border: 2px solid rgba(180, 160, 132, 0.4);
+    height: 74px;
+    margin-top: 6px;
+}
+
+.hr {
+    margin-top: 2px;
+}
+
+.fontClass {
+    font-family: 'Poppins', sans-serif;
+}
+
+.liItems {
+    margin-bottom: 10px;
+}
+
+.listEle {
+    list-style: none;
+}

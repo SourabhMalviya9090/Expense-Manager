@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Buddy</title>
+    <link rel="stylesheet" href="ExpenseManager.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@150&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Division to display overall Balance -->
+        <h2>Expense Buddy</h2>
+        <div id="Balance">
+            <h3 id="headingBalance">Your Balance</h3>
+            <h1 id="upBalance">$0.00</h1>
+        </div>
+        <!-- Division to display Income and Expense -->
+        <div class="inc-exp">
+            <div id="income">
+                <h3>Income</h3>
+                <h2 id="upIncome">$0.00</h2>
+            </div>
+            <div id="vrline"></div>
+            <div id="expense">
+                <h3>Expense</h3>
+                <h2 id="upExpense">$0.00</h2>
+            </div>
+        </div>
+        <!-- History section to display all transactions -->
+        <div class="history">
+            <h3 class="fontClass">History</h3>
+            <hr class="hr">
+            <ul id="Items">
+                <div class="liItems">
+                    <li class="listEle">
+                        Text:- <span id="listAmt">$0.00</span><button class="deleteHistory">Remove</button>
+                    </li>
+                </div>
+            </ul>
+
+        </div>
+        <div class="addItem">
+            <h3 class="fontClass">Add new Expense/Income</h3>
+            <hr class="hr">
+            <!-- user form for adding transaction in the list -->
+            <form action="" id="userForm" name="userForm">
+
+                <label for="description">Description:</label>
+                <div>
+                    <input class="input" type="text" name="description" id="description"
+                        placeholder="Enter the description....">
+                </div>
+                <label for="amount">Amount: <p id="para">(negative-Expense, positive-Income)</p></label>
+                <div>
+                    <input class="input" type="number" name="amount" id="amount" placeholder="Enter the transaction...">
+                </div>
+                <div>
+                    <button id="submitForm">Add new Transactions!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="ExpenseManager.js"></script>
+</body>
+
+</html>
